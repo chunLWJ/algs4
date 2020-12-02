@@ -2,7 +2,12 @@ package org.example.unit.one;
 
 public class BinarySearch {
 
-    // 二分算法，数组需要是 有序 的
+    /**
+     * 二分查找算法
+     * @param key 查找的 键
+     * @param a 有序的数组
+     * @return index || -1
+     */
     public static int rank(int key, int[] a) {
         int lo = 0;
         int hi = a.length - 1;
