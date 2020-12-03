@@ -38,6 +38,8 @@ public class ResizingArrayStack<T> implements Iterable {
         return item;
     }
 
+
+    // 迭代接口需要实现的方法
     @Override
     public Iterator iterator() {
         return new ReverseArrayIterator();
@@ -82,7 +84,6 @@ public class ResizingArrayStack<T> implements Iterable {
         for (Object o : resizingArrayStack) {
             System.out.println(((Integer)o).toString());
         }
-
 
     }
 }
